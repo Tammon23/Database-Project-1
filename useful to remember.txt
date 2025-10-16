@@ -1,0 +1,14 @@
+How to start the backend:
+
+cd backend
+npm start
+
+open frontend -> http://localhost/Database-Project-1/Frontend/login.html
+
+
+Existing Accounts:
+Drdo securepassword
+Bobby pancake
+RPaik password101
+Ikenna password
+newuser password

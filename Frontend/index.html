@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>DB Project 1 new</title>
+  </head>
+  <body>
+    <main>
+      <div style="text-align: right; margin-bottom: 20px">
+        <span id="username-display" style="margin-right: 10px"></span>
+        <button id="logout-btn">Logout</button>
+      </div>
+
+      <label>Name:</label>
+      <input type="text" id="name-input" />
+      <button id="add-name-btn">Add Name</button>
+
+      <br /><br /><br />
+      <div>
+        <div id="search-inputs">
+          <input placeholder="select a search method" />
+        </div>
+        <select id="search-method">
+          <option value="" disabled selected>Search Method</option>
+          <option value="firstname">Firstname</option>
+          <option value="lastname">Lastname</option>
+          <option value="firstname-lastname">Fullname</option>
+          <option value="userid">User ID</option>
+        </select>
+        <button id="search-btn">Search</button>
+      </div>
+
+      <table id="table">
+        <thead>
+          <th>Username</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <section hidden id="update-row">
+        <label>Name:</label>
+        <input type="text" id="update-name-input" />
+        <button id="update-row-btn" value="">Update</button>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+    <script type="module" src="js/logout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container auth-box">
+        <h2>Register</h2>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="firstname">Firstname</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Enter your firstname"
+          required
+        />
+
+        <label for="lastname">Lastname</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Enter your lastname"
+          required
+        />
+
+        <label for="dob">Date of birth</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          min="1900-01-01"
+          max="2025-12-31"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button id="register-btn">Register</button>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </main>
+    <script src="js/registration.js"></script>
+  </body>
+</html>
