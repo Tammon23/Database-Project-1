@@ -24,16 +24,21 @@ Show and explain the results above in a video. Submit all SQL statements in a fi
 Consider to create the user table using the following CREATE TABLE stmt (feel free to revise it):
 
 ```SQL
-CREATE TABLE Users(
-   username VARCHAR(50) primary key,
-   password VARCHAR(50), // maybe encrypted or a hash?
-   firstname VARCHAR(50),
-   lastname VARCHAR(50),
-   salary FLOAT,
-   age INTEGER,
-   registerday DATE,
-   signintime DATETIME
-)
+CREATE TABLE users (
+    username VARCHAR(50) primary key,
+    password VARCHAR(255), // maybe encrypted or a hash?
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    date_of_birth DATE,
+    registerday DATE,
+    signintime DATETIME,
+    salary FLOAT
+);
+
+CREATE VIEW users_with_age AS
+SELECT *,
+    TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) AS age
+FROM users;
 ```
 
 Note: the grading will be based on the correct result of the query, the design of the interface and your explnation skill of the results.
