@@ -1,3 +1,5 @@
+Original code: https://github.com/shiyonglu/database_javascript/tree/main/project1
+
 **Project description**
 
 In this project, you will create a user table and then use it to register a new user and then allows the user to sign into a website. This project will take 4 weeks.
